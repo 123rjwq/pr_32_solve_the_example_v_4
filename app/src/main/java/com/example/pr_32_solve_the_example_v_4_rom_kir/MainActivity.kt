@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun generateExample() {
+        operand1TextView.setBackgroundColor(android.graphics.Color.WHITE)
+
         val operand1 = Random.nextInt(10, 99)
         val operand2 = Random.nextInt(10, 99)
         val operator = when (Random.nextInt(0, 4)) {
@@ -66,7 +68,7 @@ class MainActivity : AppCompatActivity() {
             "-" -> answerEditText.setText((operand1 - operand2).toString())
             "+" -> answerEditText.setText((operand1 + operand2).toString())
         }
-
+        answerEditText.isEnabled = true
         startButton.isEnabled = false
         checkButton.isEnabled = true
         newExampleButton.isEnabled = false

@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Операнд 1"
-            android:inputType="number"/>
+            />
 
         <TextView
             android:id="@+id/operatorTextView"
@@ -48,7 +48,8 @@
             android:layout_height="wrap_content"
             android:hint="Введите ответ"
             android:minHeight="48dp"
-            android:padding="8dp"/>
+            android:padding="8dp"
+            android:inputType="number"/>
 
         <Button
             android:id="@+id/checkButton"
